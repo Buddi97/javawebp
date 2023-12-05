@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTPE hibernate-configuration SYSTEM
+"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <propert name="connection.driver_class"> com.mysql.jdbc.Driver</propert>
+        <propert name="connection.url">jdbc:mysql://localhost:3306/javawebp</propert>
+        <propert name="connection.username">root</propert>
+        <propert name="connection.password">root</propert>
+        <propert name="dialect" >org.hibernate.dialect.MySQL57Dialect</propert>
+        <propert name="hbm2ddl.auto">update</propert>
+        <propert name="show_sql">true</propert>
+        <mapping class="com.learn.javawebp.entities.User"/>
+        <mapping class="com.learn.javawebp.entities.Category"/>
+        <mapping class="com.learn.javawebp.entities.Product"/>
+
+        
+    </session-factory>
+    
+</hibernate-configuration>
+
